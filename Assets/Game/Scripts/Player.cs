@@ -10,5 +10,9 @@ public class Player : MonoBehaviour
         var rigidbody2D = GetComponent<Rigidbody2D>();
 
         rigidbody2D.velocity = new Vector2(horizontal, rigidbody2D.velocity.y);
+
+        var animator = GetComponent<Animator>();
+        bool isWalking = horizontal != 0;
+        animator.SetBool("Walking", isWalking);
     }
 }

@@ -5490,3 +5490,115 @@ System memory in use after: 89.8 MB.
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2455.
 Total: 3.353600 ms (FindLiveObjects: 0.816100 ms CreateObjectMapping: 0.249600 ms MarkObjects: 2.163300 ms  DeleteObjects: 0.122600 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008534 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.023 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 89.8 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2459.
+Total: 2.255400 ms (FindLiveObjects: 0.251700 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.831100 ms  DeleteObjects: 0.123900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 49458.387484 seconds.
+  path: Assets/Art Assets/Player/p1_walk/PNG/p1_walk01.controller
+  artifactKey: Guid(ee9b90390d9af2e4da4b51b43968fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player/p1_walk/PNG/p1_walk01.controller using Guid(ee9b90390d9af2e4da4b51b43968fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f23c0bd10e8833a610eab7b946b88f') in 0.023832 seconds
+  Import took 0.028676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.521329 seconds.
+  path: Assets/Art Assets/Player/p1_walk/PNG/P1 Walk.anim
+  artifactKey: Guid(f4d8541902e6ff04a96e141579228773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player/p1_walk/PNG/P1 Walk.anim using Guid(f4d8541902e6ff04a96e141579228773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5088bad3f6c46c63d7e5c37b23f8660') in 0.011523 seconds
+  Import took 0.015661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004889 seconds.
+  path: Assets/Art Assets/Player/p1_walk/PNG/P1 Walk.anim
+  artifactKey: Guid(f4d8541902e6ff04a96e141579228773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player/p1_walk/PNG/P1 Walk.anim using Guid(f4d8541902e6ff04a96e141579228773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5088bad3f6c46c63d7e5c37b23f8660') in 0.004959 seconds
+  Import took 0.008705 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009223 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.015 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 2.576900 ms (FindLiveObjects: 0.454700 ms CreateObjectMapping: 0.045200 ms MarkObjects: 1.935300 ms  DeleteObjects: 0.140500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.772383 seconds.
+  path: Assets/Art Assets/Player/p1_walk/PNG/p1_walk01.controller
+  artifactKey: Guid(ee9b90390d9af2e4da4b51b43968fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Player/p1_walk/PNG/p1_walk01.controller using Guid(ee9b90390d9af2e4da4b51b43968fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822d1c2528adcf516b29e4457b96baa4') in 0.016936 seconds
+  Import took 0.021179 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009368 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.897 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2467.
+Total: 3.382200 ms (FindLiveObjects: 0.759800 ms CreateObjectMapping: 0.114200 ms MarkObjects: 2.337500 ms  DeleteObjects: 0.166800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008130 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.9 MB.
+System memory in use after: 89.9 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2471.
+Total: 3.232900 ms (FindLiveObjects: 0.273500 ms CreateObjectMapping: 0.048100 ms MarkObjects: 2.752300 ms  DeleteObjects: 0.157300 ms)
+
