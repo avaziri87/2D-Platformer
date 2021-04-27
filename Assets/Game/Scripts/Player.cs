@@ -14,5 +14,11 @@ public class Player : MonoBehaviour
         var animator = GetComponent<Animator>();
         bool isWalking = horizontal != 0;
         animator.SetBool("Walking", isWalking);
+
+        if(horizontal != 0)
+        {
+            var spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.flipX = horizontal < 0;
+        }
     }
 }
