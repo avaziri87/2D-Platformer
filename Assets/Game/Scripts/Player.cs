@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float _speed = 5.0f;
+    [SerializeField] float _jumpForce = 200;
 
     void Update()
     {
@@ -19,6 +20,11 @@ public class Player : MonoBehaviour
         {
             var spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = horizontal < 0;
+        }
+
+        if(Input.GetButtonDown("Fire1"))
+        {
+            rigidbody2D.AddForce(Vector2.up * _jumpForce);
         }
     }
 }
