@@ -5762,3 +5762,51 @@ System memory in use after: 89.9 MB.
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2503.
 Total: 3.497500 ms (FindLiveObjects: 0.338400 ms CreateObjectMapping: 0.048800 ms MarkObjects: 2.915900 ms  DeleteObjects: 0.192400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009122 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.030 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2507.
+Total: 3.037900 ms (FindLiveObjects: 0.268400 ms CreateObjectMapping: 0.045300 ms MarkObjects: 2.562200 ms  DeleteObjects: 0.160000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2088.017547 seconds.
+  path: Assets/Art Assets/Tiles/bridgeLogs.png
+  artifactKey: Guid(4659e8547e7a7a64caea3f2b4a4687d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art Assets/Tiles/bridgeLogs.png using Guid(4659e8547e7a7a64caea3f2b4a4687d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b075054635661005c79c0f36c849877e') in 0.065370 seconds
+  Import took 0.068452 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009389 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.991 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1823 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.0 MB.
+System memory in use after: 90.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2512.
+Total: 4.255500 ms (FindLiveObjects: 0.522800 ms CreateObjectMapping: 0.164300 ms MarkObjects: 3.340500 ms  DeleteObjects: 0.226000 ms)
+
