@@ -4,12 +4,16 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float _speed = 5.0f;
     [SerializeField] float _jumpForce = 200;
+    [SerializeField] int _maxJumps = 2;
+    [SerializeField] Transform _feet;
 
     Vector3 _startPos;
+    int _jumpsRemaining;
 
     void Start()
     {
         _startPos = transform.position;
+        _jumpsRemaining = _maxJumps;
     }
 
     void Update()
@@ -32,9 +36,20 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = horizontal < 0;
         }
 
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Fire1") && _jumpsRemaining > 0)
         {
+            _jumpsRemaining--;
             rigidbody2D.AddForce(Vector2.up * _jumpForce);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        var hit = Physics2D.OverlapCircle(_feet.position, 0.1f, LayerMask.GetMask("Default"));
+
+        if(hit != null)
+        {
+            _jumpsRemaining = _maxJumps;
         }
     }
 
