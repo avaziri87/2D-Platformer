@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Game\Scripts\Player.cs" />
     <Compile Include="Assets\Game\Scripts\Fly.cs" />
+    <Compile Include="Assets\Game\Scripts\KillOnEnter.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Art Assets\HUD\hud_spritesheet.xml" />
