@@ -61,6 +61,7 @@
     <Compile Include="Assets\Game\Scripts\Player.cs" />
     <Compile Include="Assets\Game\Scripts\HorizontalCamera.cs" />
     <Compile Include="Assets\Game\Scripts\Flag.cs" />
+    <Compile Include="Assets\Game\Scripts\Mushroom.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Art Assets\HUD\hud_spritesheet.xml" />
