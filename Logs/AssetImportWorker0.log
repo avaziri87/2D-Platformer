@@ -154,3 +154,251 @@ System memory in use after: 85.8 MB.
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2313.
 Total: 4.512100 ms (FindLiveObjects: 0.650200 ms CreateObjectMapping: 0.161200 ms MarkObjects: 3.526800 ms  DeleteObjects: 0.171800 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 166417.939380 seconds.
+  path: Assets/Game/Prefabs/Spikes.prefab
+  artifactKey: Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Spikes.prefab using Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df03a93b280989bd9491f7c545adf735') in 0.103861 seconds
+  Import took 0.107912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.544033 seconds.
+  path: Assets/Game/Prefabs/Fly.prefab
+  artifactKey: Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Fly.prefab using Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a70989017433a095f21c21f538e5340') in 0.050844 seconds
+  Import took 0.054634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035414 seconds.
+  path: Assets/Game/Prefabs/Fly.prefab
+  artifactKey: Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Fly.prefab using Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a70989017433a095f21c21f538e5340') in 0.018949 seconds
+  Import took 0.022948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.813639 seconds.
+  path: Assets/Game/Prefabs/Fly.prefab
+  artifactKey: Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Fly.prefab using Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7753545ddc00451363f5c20cc779c658') in 0.017325 seconds
+  Import took 0.021307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Game/Prefabs/Ground Grass.prefab
+  artifactKey: Guid(50093c96f6cd60048b760727ff3164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Ground Grass.prefab using Guid(50093c96f6cd60048b760727ff3164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f575f13a716be4383e4b49618e0fb8') in 0.025458 seconds
+  Import took 0.028874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Game/Prefabs/Spikes.prefab
+  artifactKey: Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Spikes.prefab using Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ae43de66d2eb433e814cd38c762080') in 0.016940 seconds
+  Import took 0.020738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Game/Prefabs/Ground Snow.prefab
+  artifactKey: Guid(69ac4ea14696253459838787bebe93c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Ground Snow.prefab using Guid(69ac4ea14696253459838787bebe93c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3f9da845af4cf4112e361f5e66e283') in 0.022536 seconds
+  Import took 0.026460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.952032 seconds.
+  path: Assets/Game/Prefabs/Fly.prefab
+  artifactKey: Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Fly.prefab using Guid(432bdf30e48eae6429fb8c8701df8ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0589a42ca5773410957537e9e285ad6') in 0.017668 seconds
+  Import took 0.022037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Game/Prefabs/Ground Grass.prefab
+  artifactKey: Guid(50093c96f6cd60048b760727ff3164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Ground Grass.prefab using Guid(50093c96f6cd60048b760727ff3164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d667fda5fa6b730c6a842d7f3edc38') in 0.013514 seconds
+  Import took 0.017178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Game/Prefabs/Spikes.prefab
+  artifactKey: Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Spikes.prefab using Guid(0ea390ab9ec1a9241bf10bfcdd60ae7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab5f17b308a97df504b176a4e50ec15') in 0.016152 seconds
+  Import took 0.019875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Game/Prefabs/Ground Snow.prefab
+  artifactKey: Guid(69ac4ea14696253459838787bebe93c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Ground Snow.prefab using Guid(69ac4ea14696253459838787bebe93c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca3bab19ba43e901f0d05eb2e6935e9') in 0.013819 seconds
+  Import took 0.016943 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.359208 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.083 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2324.
+Total: 3.433800 ms (FindLiveObjects: 0.714000 ms CreateObjectMapping: 0.166500 ms MarkObjects: 2.416800 ms  DeleteObjects: 0.133500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.639331 seconds.
+  path: Assets/Game/Physics/Grass.physicsMaterial2D
+  artifactKey: Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Physics/Grass.physicsMaterial2D using Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d94bf6c1f88db29924de8846f335d2a') in 0.019243 seconds
+  Import took 0.023206 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007843 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2328.
+Total: 4.467100 ms (FindLiveObjects: 0.837200 ms CreateObjectMapping: 0.207700 ms MarkObjects: 3.292000 ms  DeleteObjects: 0.128300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.868065 seconds.
+  path: Assets/Game/Physics/Grass.physicsMaterial2D
+  artifactKey: Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Physics/Grass.physicsMaterial2D using Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90749a3bfa04953d874efa7d8554cdd9') in 0.022771 seconds
+  Import took 0.027685 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.0 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2332.
+Total: 3.751100 ms (FindLiveObjects: 0.479800 ms CreateObjectMapping: 0.051600 ms MarkObjects: 3.034700 ms  DeleteObjects: 0.183000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.496914 seconds.
+  path: Assets/Game/Physics/Grass.physicsMaterial2D
+  artifactKey: Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Physics/Grass.physicsMaterial2D using Guid(7d0552a5fcab0f64c9c2eed6f1e70d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16358ffbb9ba4d4397c800f741fba05') in 0.019131 seconds
+  Import took 0.023752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 280.705040 seconds.
+  path: Assets/Game/Prefabs/Logs Platform.prefab
+  artifactKey: Guid(2175032ca5d806740b4e1f705defd569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Logs Platform.prefab using Guid(2175032ca5d806740b4e1f705defd569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1404eab22b417df01d582884de388fb3') in 0.063139 seconds
+  Import took 0.066834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.427243 seconds.
+  path: Assets/Game/Prefabs/Grass Platform.prefab
+  artifactKey: Guid(599eda0483908fe42892b7f127e9fed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Prefabs/Grass Platform.prefab using Guid(599eda0483908fe42892b7f127e9fed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448569ba70934fb224675aebe95672d6') in 0.026824 seconds
+  Import took 0.030730 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008422 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.991 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2337.
+Total: 2.390500 ms (FindLiveObjects: 0.264900 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.954400 ms  DeleteObjects: 0.124100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2341.
+Total: 2.812000 ms (FindLiveObjects: 0.273600 ms CreateObjectMapping: 0.048900 ms MarkObjects: 2.367300 ms  DeleteObjects: 0.120800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008379 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.986 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2345.
+Total: 4.231200 ms (FindLiveObjects: 0.604100 ms CreateObjectMapping: 0.181300 ms MarkObjects: 3.252800 ms  DeleteObjects: 0.189700 ms)
+
