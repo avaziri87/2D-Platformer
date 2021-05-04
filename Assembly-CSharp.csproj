@@ -63,6 +63,8 @@
     <Compile Include="Assets\Game\Scripts\Flag.cs" />
     <Compile Include="Assets\Game\Scripts\Mushroom.cs" />
     <Compile Include="Assets\Game\Scripts\SpringBoard.cs" />
+    <Compile Include="Assets\Game\Scripts\PushButtonSwitch.cs" />
+    <Compile Include="Assets\Game\Scripts\Slime.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Art Assets\HUD\hud_spritesheet.xml" />

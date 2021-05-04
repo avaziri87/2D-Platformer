@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float     _speed = 5.0f;
-    [SerializeField] float     _jumpVelocity = 10;
-    [SerializeField] float     _downPull = 5;
-    [SerializeField] float     _maxJumpDuration = 0.1f;
-    [SerializeField] int       _maxJumps = 2;
+    [Header("Movement Parameters")]
+    [SerializeField] float _speed = 1;
+    [SerializeField] float _slipFactor = 1;
+    [Header("Jump Parameters")]
+    [SerializeField] float _jumpVelocity = 10;
+    [SerializeField] float _downPull = 5;
+    [SerializeField] float _maxJumpDuration = 0.1f;
+    [SerializeField] int _maxJumps = 2;
     [SerializeField] Transform _feet;
 
     Rigidbody2D _rigidbody2D;
@@ -14,11 +17,12 @@ public class Player : MonoBehaviour
     SpriteRenderer _spriteRenderer;
 
     Vector3 _startPos;
-    int     _jumpsRemaining;
-    float   _fallTimer;
-    float   _jumpTimer;
-    float   _horizontal;
-    bool    _isGrounded;
+    int _jumpsRemaining;
+    float _fallTimer;
+    float _jumpTimer;
+    float _horizontal;
+    bool _isGrounded;
+    bool _isOnSlipperyGround;
 
     void Start()
     {
@@ -33,13 +37,17 @@ public class Player : MonoBehaviour
     {
         CheckIsGrounded();
         GetInput();
-        MoveHorizontal();
+        
+        if(_isOnSlipperyGround)
+            MoveSlipperyHorizontal();
+        else
+            MoveHorizontal();
+        
         UpdateAnimator();
         UpdateSprite();
 
         if (CanJump()) Jump();
         else if (CanDoubleJump()) DoubleJump();
-
 
         _jumpTimer += Time.deltaTime;
 
@@ -62,10 +70,16 @@ public class Player : MonoBehaviour
     }
     void MoveHorizontal()
     {
-        if (Mathf.Abs(_horizontal) >= 1)
-        {
-            _rigidbody2D.velocity = new Vector2(_horizontal, _rigidbody2D.velocity.y);
-        }
+        _rigidbody2D.velocity = new Vector2(_horizontal * _speed, _rigidbody2D.velocity.y);
+    }
+    void MoveSlipperyHorizontal()
+    {
+        var desiredVelocity = new Vector2(_horizontal * _speed, _rigidbody2D.velocity.y);
+        var smoothedVelocity = Vector2.Lerp(
+            _rigidbody2D.velocity,
+            desiredVelocity,
+            Time.deltaTime / _slipFactor);
+        _rigidbody2D.velocity = smoothedVelocity;
     }
     void UpdateSprite()
     {
@@ -83,6 +97,11 @@ public class Player : MonoBehaviour
     {
         var hit = Physics2D.OverlapCircle(_feet.position, 0.1f, LayerMask.GetMask("Default"));
         _isGrounded = hit != null;
+
+        if (hit != null)
+            _isOnSlipperyGround = hit.CompareTag("Slippery");
+        else
+            _isOnSlipperyGround = false;
     }
     bool CanJump()
     {
