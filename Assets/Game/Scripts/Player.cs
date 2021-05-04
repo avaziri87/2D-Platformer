@@ -9,56 +9,41 @@ public class Player : MonoBehaviour
     [SerializeField] int       _maxJumps = 2;
     [SerializeField] Transform _feet;
 
+    Rigidbody2D _rigidbody2D;
+    Animator    _animator;
+    SpriteRenderer _spriteRenderer;
+
     Vector3 _startPos;
     int     _jumpsRemaining;
     float   _fallTimer;
     float   _jumpTimer;
+    float   _horizontal;
+    bool    _isGrounded;
 
     void Start()
     {
         _startPos = transform.position;
         _jumpsRemaining = _maxJumps;
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        var hit = Physics2D.OverlapCircle(_feet.position, 0.1f, LayerMask.GetMask("Default"));
-        bool isGrounded = hit != null;
+        CheckIsGrounded();
+        GetInput();
+        MoveHorizontal();
+        UpdateAnimator();
+        UpdateSprite();
 
-        var horizontal = Input.GetAxis("Horizontal") * _speed;
-        var rigidbody2D = GetComponent<Rigidbody2D>();
+        if (CanJump()) Jump();
+        else if (CanDoubleJump()) DoubleJump();
 
-        if(Mathf.Abs(horizontal) >= 1)
-        {
-            rigidbody2D.velocity = new Vector2(horizontal, rigidbody2D.velocity.y);
-        }
 
-        var animator = GetComponent<Animator>();
-        bool isWalking = horizontal != 0;
-        animator.SetBool("Walking", isWalking);
+        _jumpTimer += Time.deltaTime;
 
-        if(horizontal != 0)
-        {
-            var spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.flipX = horizontal < 0;
-        }
-
-        if(Input.GetButtonDown("Fire1") && _jumpsRemaining > 0)
-        {
-            _jumpsRemaining--;
-            _fallTimer = 0;
-            _jumpTimer = 0;
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, _jumpVelocity);
-        }
-        else if(Input.GetButton("Fire1") && _jumpTimer <= _maxJumpDuration)
-        {
-            _fallTimer = 0;
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, _jumpVelocity);
-        }
-
-            _jumpTimer += Time.deltaTime;
-
-        if(isGrounded && _fallTimer > 0)
+        if (_isGrounded && _fallTimer > 0)
         {
             _fallTimer = 0;
             _jumpsRemaining = _maxJumps;
@@ -67,8 +52,57 @@ public class Player : MonoBehaviour
         {
             _fallTimer += Time.deltaTime;
             var downForce = _downPull * _fallTimer * _fallTimer;
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, rigidbody2D.velocity.y - downForce);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y - downForce);
         }
+    }
+
+    void GetInput()
+    {
+        _horizontal = Input.GetAxis("Horizontal") * _speed;
+    }
+    void MoveHorizontal()
+    {
+        if (Mathf.Abs(_horizontal) >= 1)
+        {
+            _rigidbody2D.velocity = new Vector2(_horizontal, _rigidbody2D.velocity.y);
+        }
+    }
+    void UpdateSprite()
+    {
+        if (_horizontal != 0)
+        {
+            _spriteRenderer.flipX = _horizontal < 0;
+        }
+    }
+    void UpdateAnimator()
+    {
+        bool isWalking = _horizontal != 0;
+        _animator.SetBool("Walking", isWalking);
+    }
+    void CheckIsGrounded()
+    {
+        var hit = Physics2D.OverlapCircle(_feet.position, 0.1f, LayerMask.GetMask("Default"));
+        _isGrounded = hit != null;
+    }
+    bool CanJump()
+    {
+        return Input.GetButtonDown("Fire1") && _jumpsRemaining > 0;
+    }
+    void Jump()
+    {
+        _jumpsRemaining--;
+        _fallTimer = 0;
+        _jumpTimer = 0;
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpVelocity);
+    }
+    bool CanDoubleJump()
+    {
+        return Input.GetButton("Fire1") && _jumpTimer <= _maxJumpDuration;
+    }
+    void DoubleJump()
+    {
+        _fallTimer = 0;
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpVelocity);
     }
 
     internal void ResetToStart()
