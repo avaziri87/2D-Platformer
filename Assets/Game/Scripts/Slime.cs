@@ -7,14 +7,17 @@ public class Slime : MonoBehaviour
 {
     [SerializeField] Transform _leftGroundCheck = null;
     [SerializeField] Transform _rightGroundCheck = null;
+    [SerializeField] Sprite _deadSprite = null;
 
     Rigidbody2D _rigidbody2D = null;
 
     float _direction = -1;
+    SpriteRenderer _spriteRenderer;
 
     void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -42,14 +45,40 @@ public class Slime : MonoBehaviour
 
         if (player == null) return;
 
-        player.ResetToStart();
+        var contactPoint2D = collision.contacts[0];
+        Vector2 normal = contactPoint2D.normal;
+
+        if(normal.y <= -0.5f)
+        {
+            StartCoroutine(Die());
+        }
+        else
+        {
+            player.ResetToStart();
+        }
+    }
+
+    IEnumerator Die()
+    {
+        _spriteRenderer.sprite = _deadSprite;
+        GetComponent<Animator>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().simulated = false;
+
+        float alpha = 1;
+        while (alpha > 0)
+        {
+            yield return null;
+            alpha -= Time.deltaTime;
+            _spriteRenderer.color = new Color(1, 1, 1, alpha);
+        }
+
+        enabled = false;
     }
 
     private void TurnAround()
     {
         _direction *= -1;
-        var spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        spriteRenderer.flipX = _direction > 0;
+        _spriteRenderer.flipX = _direction > 0;
     }
-
 }

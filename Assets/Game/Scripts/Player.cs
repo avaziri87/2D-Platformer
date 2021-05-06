@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] int _playerNumber = 1;
     [Header("Movement Parameters")]
     [SerializeField] float _speed = 1;
     [SerializeField] float _slipFactor = 1;
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     float _horizontal;
     bool _isGrounded;
     bool _isOnSlipperyGround;
+
+    public int PlayerNumber => _playerNumber;
 
     void Start()
     {
@@ -66,7 +69,7 @@ public class Player : MonoBehaviour
 
     void GetInput()
     {
-        _horizontal = Input.GetAxis("Horizontal") * _speed;
+        _horizontal = Input.GetAxis($"P{_playerNumber}Horizontal") * _speed;
     }
     void MoveHorizontal()
     {
@@ -105,7 +108,7 @@ public class Player : MonoBehaviour
     }
     bool CanJump()
     {
-        return Input.GetButtonDown("Fire1") && _jumpsRemaining > 0;
+        return Input.GetButtonDown($"P{_playerNumber}Jump") && _jumpsRemaining > 0;
     }
     void Jump()
     {
@@ -116,7 +119,7 @@ public class Player : MonoBehaviour
     }
     bool CanDoubleJump()
     {
-        return Input.GetButton("Fire1") && _jumpTimer <= _maxJumpDuration;
+        return Input.GetButton($"P{_playerNumber}Jump") && _jumpTimer <= _maxJumpDuration;
     }
     void DoubleJump()
     {
