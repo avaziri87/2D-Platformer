@@ -56,16 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game\Scripts\Mushroom.cs" />
+    <Compile Include="Assets\Game\Scripts\Slime.cs" />
+    <Compile Include="Assets\Game\Scripts\PushButtonSwitch.cs" />
     <Compile Include="Assets\Game\Scripts\KillOnEnter.cs" />
-    <Compile Include="Assets\Game\Scripts\Fly.cs" />
-    <Compile Include="Assets\Game\Scripts\Player.cs" />
+    <Compile Include="Assets\Game\Scripts\SpringBoard.cs" />
     <Compile Include="Assets\Game\Scripts\HorizontalCamera.cs" />
     <Compile Include="Assets\Game\Scripts\Flag.cs" />
-    <Compile Include="Assets\Game\Scripts\Mushroom.cs" />
-    <Compile Include="Assets\Game\Scripts\SpringBoard.cs" />
-    <Compile Include="Assets\Game\Scripts\PushButtonSwitch.cs" />
-    <Compile Include="Assets\Game\Scripts\Slime.cs" />
+    <Compile Include="Assets\Game\Scripts\Fly.cs" />
+    <Compile Include="Assets\Game\Scripts\Player.cs" />
     <Compile Include="Assets\Game\Scripts\Breakable.cs" />
+    <Compile Include="Assets\Game\Scripts\Coin.cs" />
+    <Compile Include="Assets\Game\Scripts\UICoinsCollected.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Art Assets\HUD\hud_spritesheet.xml" />
@@ -709,6 +711,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -735,12 +743,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
