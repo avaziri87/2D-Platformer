@@ -486,8 +486,8 @@ InputManager:
     axis: 5
     joyNum: 0
   - serializedVersion: 3
-    m_Name: P1 Horizontal
-    descriptiveName: Player 1 Horizontal
+    m_Name: P1Horizontal
+    descriptiveName: Player 1 Horizontal - Keyboard
     descriptiveNegativeName: 
     negativeButton: a
     positiveButton: d
@@ -502,10 +502,58 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: P2 Horizontal
-    descriptiveName: Player 2 Horizontal
+    m_Name: P1Horizontal
+    descriptiveName: Player 1 Horizontal -Joystick
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.1
+    sensitivity: 3
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: P2Horizontal
+    descriptiveName: Player 2 Horizontal - Keyboard
     descriptiveNegativeName: 
     negativeButton: left
+    positiveButton: right
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.001
+    sensitivity: 3
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: P2Horizontal
+    descriptiveName: Player 2 Horizontal
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.1
+    sensitivity: 3
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: P1Jump
+    descriptiveName: Player 1 Jump - Keyboard
+    descriptiveNegativeName: 
+    negativeButton: 
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
@@ -519,10 +567,10 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: P1Jump
-    descriptiveName: Player 1 Jump
+    descriptiveName: Player 1 Jump - Joystick
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: left ctrl
+    negativeButton: joystick 1 button 0
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -532,10 +580,10 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 0
+    joyNum: 1
   - serializedVersion: 3
     m_Name: P2Jump
-    descriptiveName: Player 2 Jump
+    descriptiveName: Player 2 Jump - Keyboard
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -549,3 +597,19 @@ InputManager:
     type: 0
     axis: 0
     joyNum: 0
+  - serializedVersion: 3
+    m_Name: P2Jump
+    descriptiveName: Player 2 Jump - Joystick
+    descriptiveNegativeName: 
+    negativeButton: joystick 2 button 0
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.001
+    sensitivity: 3
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 2

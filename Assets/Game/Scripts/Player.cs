@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
     {
         bool isWalking = _horizontal != 0;
         _animator.SetBool("Walking", isWalking);
+        _animator.SetBool("Jump", CanDoubleJump());
     }
     void CheckIsGrounded()
     {
@@ -126,7 +127,6 @@ public class Player : MonoBehaviour
         _fallTimer = 0;
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpVelocity);
     }
-
     internal void ResetToStart()
     {
         transform.position = _startPos;
