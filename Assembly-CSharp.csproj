@@ -106,6 +106,8 @@
     <Compile Include="Assets\Game\Scripts\FallingPlataform.cs" />
     <Compile Include="Assets\Game\Scripts\Key.cs" />
     <Compile Include="Assets\Game\Scripts\KeyLock.cs" />
+    <Compile Include="Assets\Game\Scripts\Collector.cs" />
+    <Compile Include="Assets\Game\Scripts\Collectible.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
