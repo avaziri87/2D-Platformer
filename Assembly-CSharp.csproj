@@ -104,6 +104,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Game\Scripts\FallingPlataform.cs" />
+    <Compile Include="Assets\Game\Scripts\Key.cs" />
+    <Compile Include="Assets\Game\Scripts\KeyLock.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
