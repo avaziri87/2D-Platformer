@@ -108,6 +108,9 @@
     <Compile Include="Assets\Game\Scripts\KeyLock.cs" />
     <Compile Include="Assets\Game\Scripts\Collector.cs" />
     <Compile Include="Assets\Game\Scripts\Collectible.cs" />
+    <Compile Include="Assets\Game\Scripts\CoinBox.cs" />
+    <Compile Include="Assets\Game\Scripts\ItemBox.cs" />
+    <Compile Include="Assets\Game\Scripts\HittableFromBelow.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

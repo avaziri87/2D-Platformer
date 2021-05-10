@@ -66,3 +66,6 @@ TagManager:
   - name: Foreground Props
     uniqueID: 3945223153
     locked: 0
+  - name: HUD
+    uniqueID: 1506732673
+    locked: 0

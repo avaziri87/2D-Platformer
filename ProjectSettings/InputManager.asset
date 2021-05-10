@@ -553,7 +553,7 @@ InputManager:
     m_Name: P1Jump
     descriptiveName: Player 1 Jump - Keyboard
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: left ctrl
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
@@ -585,7 +585,7 @@ InputManager:
     m_Name: P2Jump
     descriptiveName: Player 2 Jump - Keyboard
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: right ctrl
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
