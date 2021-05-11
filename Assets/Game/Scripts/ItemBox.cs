@@ -5,9 +5,9 @@ using UnityEngine;
 public class ItemBox : HittableFromBelow
 {
     [SerializeField] GameObject _itemPrefab;
+    [SerializeField] GameObject _item;
     [SerializeField] Vector2 _itemLaunchVelocity;
 
-    GameObject _item;
     bool _used;
 
     protected override bool CanUse => _used == false;
