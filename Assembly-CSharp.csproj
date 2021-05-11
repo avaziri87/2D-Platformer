@@ -111,6 +111,7 @@
     <Compile Include="Assets\Game\Scripts\CoinBox.cs" />
     <Compile Include="Assets\Game\Scripts\ItemBox.cs" />
     <Compile Include="Assets\Game\Scripts\HittableFromBelow.cs" />
+    <Compile Include="Assets\Game\Scripts\Switch.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
