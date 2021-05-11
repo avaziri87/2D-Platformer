@@ -523,7 +523,7 @@ MonoBehaviour:
   _openTop: {fileID: 21300000, guid: e1ec3b8afb6387d46b1160d78837b49d, type: 3}
   _rendererMid: {fileID: 6201583426969863421}
   _rendererTop: {fileID: 6201583425054712260}
-  _requiredCoins: 3
+  _requiredCoins: 99999999
   _exit: {fileID: 0}
   _canvas: {fileID: 6201583426372805835}
 --- !u!61 &6201583426969863416

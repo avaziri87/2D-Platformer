@@ -308,7 +308,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -540888595
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dea43da862f4da94ea58afdcc2e9a9c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -337,7 +337,7 @@ MonoBehaviour:
   _openTop: {fileID: 21300000, guid: e1ec3b8afb6387d46b1160d78837b49d, type: 3}
   _rendererMid: {fileID: 7539904896398161768}
   _rendererTop: {fileID: 7539904897924108420}
-  _requiredCoins: 3
+  _requiredCoins: 0
   _exit: {fileID: 0}
   _canvas: {fileID: 7539904896257579748}
 --- !u!61 &7539904896398161770
@@ -510,7 +510,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -540888595
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64ea3d8cf5fbe954dbe7ee06007b5bce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

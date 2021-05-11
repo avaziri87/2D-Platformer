@@ -156,12 +156,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 1
-  _speed: 2
+  _speed: 2.1
   _slipFactor: 1
   _jumpVelocity: 8
   _downPull: 0.1
   _maxJumpDuration: 0.2
-  _maxJumps: 2
+  _maxJumps: 1
   _feet: {fileID: 6035116705205362863}
 --- !u!1 &6035116705205362862
 GameObject:
