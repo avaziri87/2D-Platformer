@@ -4,12 +4,14 @@ public class SpringBoard : MonoBehaviour
 {
     [SerializeField] float _bounceVelocity = 5;
     [SerializeField] Sprite _downSprite = null;
-
+    
+    AudioSource _audioSource;
     SpriteRenderer _spriteRender;
     Sprite _upSprite = null;
 
     private void Awake()
     {
+        _audioSource = GetComponent<AudioSource>();
         _spriteRender = GetComponent<SpriteRenderer>();
         _upSprite = _spriteRender.sprite;
     }
@@ -36,5 +38,7 @@ public class SpringBoard : MonoBehaviour
         if (player == null) return;
 
         _spriteRender.sprite = _upSprite;
+
+        if (_audioSource != null) _audioSource.Play();
     }
 }

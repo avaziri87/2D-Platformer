@@ -10,8 +10,15 @@ public class Collectible: MonoBehaviour
         var player = collision.GetComponent<Player>();
         if (player == null) return;
 
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+
         if(OnPikcUp != null) OnPikcUp.Invoke();
 
-        gameObject.SetActive(false);
+        var audioSource = GetComponent<AudioSource>();
+        if(audioSource != null)
+        {
+            audioSource.Play();
+        }
     }
 }

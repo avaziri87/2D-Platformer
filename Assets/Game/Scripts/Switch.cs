@@ -14,7 +14,7 @@ public class Switch : MonoBehaviour
     [SerializeField] UnityEvent _rightActive;
     [SerializeField] UnityEvent _leftActive;
     [SerializeField] UnityEvent _centerActive;
-
+    AudioSource _audioSource;
     SpriteRenderer _spriteRenderer;
     ToggleDirection _currentDirection;
 
@@ -27,6 +27,7 @@ public class Switch : MonoBehaviour
 
     void Awake()
     {
+        _audioSource = GetComponent<AudioSource>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         SetToggleDirection(_startingDirection, true);
     }
@@ -57,6 +58,7 @@ public class Switch : MonoBehaviour
         {
             case ToggleDirection.Left:
                 _spriteRenderer.sprite = _leftSprite;
+                if (_audioSource != null) _audioSource.Play();
                 _leftActive?.Invoke();
                 break;
             case ToggleDirection.Center:
@@ -65,6 +67,7 @@ public class Switch : MonoBehaviour
                 break;
             case ToggleDirection.Right:
                 _spriteRenderer.sprite = _rightSprite;
+                if (_audioSource != null) _audioSource.Play();
                 _rightActive?.Invoke();
                 break;
             default:

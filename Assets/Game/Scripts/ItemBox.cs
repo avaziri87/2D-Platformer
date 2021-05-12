@@ -29,6 +29,5 @@ public class ItemBox : HittableFromBelow
         {
             itemRigidbody.velocity = _itemLaunchVelocity;
         }
-        
     }
 }

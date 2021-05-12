@@ -10,6 +10,8 @@ public class KeyLock : MonoBehaviour
     public void Unlock()
     {
         Debug.Log("Unlocked!");
+        var audioSource = GetComponent<AudioSource>();
+        if (audioSource != null) audioSource.Play();
         _onUnlock.Invoke();
     }
 }

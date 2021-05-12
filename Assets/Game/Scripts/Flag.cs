@@ -20,6 +20,8 @@ public class Flag : MonoBehaviour
 
     IEnumerator LoadScene()
     {
+        string key = _sceneName + "Unlock";
+        PlayerPrefs.SetInt(key, 1);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(_sceneName);
     }

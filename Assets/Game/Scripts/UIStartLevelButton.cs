@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class UIStartLevelButton : MonoBehaviour
 {
-    [SerializeField] string _levelName;
+    [SerializeField] string _sceneName;
+
+    public string SceneName => _sceneName;
+
+
     public void LoadLevel()
     {
-        SceneManager.LoadScene(_levelName);
+        string key = _sceneName + "Unlock";
+        PlayerPrefs.SetInt(key, 1);
+        SceneManager.LoadScene(_sceneName);
     }
 }

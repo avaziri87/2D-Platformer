@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
     Rigidbody2D _rigidbody2D;
     Animator    _animator;
     SpriteRenderer _spriteRenderer;
-
+    AudioSource _audioSource;
     Vector3 _startPos;
     int _jumpsRemaining;
     float _fallTimer;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
         _jumpButton = $"P{_playerNumber}Jump";
         _horizontalAxis = $"P{_playerNumber}Horizontal";
         _layerMask = LayerMask.GetMask("Default");
@@ -123,6 +125,7 @@ public class Player : MonoBehaviour
         _fallTimer = 0;
         _jumpTimer = 0;
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpVelocity);
+        if(_audioSource != null) _audioSource.Play();
     }
     bool CanDoubleJump()
     {
@@ -136,6 +139,7 @@ public class Player : MonoBehaviour
     internal void ResetToStart()
     {
         _rigidbody2D.position = _startPos;
+        SceneManager.LoadScene("Menu Scene");
     }    
     internal void TeleportTo(Vector3 position)
     {
