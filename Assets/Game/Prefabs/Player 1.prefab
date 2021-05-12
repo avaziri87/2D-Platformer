@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6035116703459977929}
   - component: {fileID: 6035116703459977925}
   - component: {fileID: 6035116703459977924}
+  - component: {fileID: 6109700422039766210}
   - component: {fileID: 6590004947651463350}
   m_Layer: 6
   m_Name: Player 1
@@ -164,6 +165,19 @@ MonoBehaviour:
   _maxJumpDuration: 0.2
   _maxJumps: 1
   _feet: {fileID: 6035116705205362863}
+--- !u!114 &6109700422039766210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6035116703459977935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b85e203051ca04b8a1e36cba075199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireballPrefab: {fileID: 5233955457205760422, guid: 7223690df8450124ea5f161605cda0ee, type: 3}
 --- !u!82 &6590004947651463350
 AudioSource:
   m_ObjectHideFlags: 0

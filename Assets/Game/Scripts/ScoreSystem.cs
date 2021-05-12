@@ -5,19 +5,20 @@ public static class ScoreSystem
 {
     public static event Action<int> OnScoreChange;
 
-    static int _score;
     static int _highScore;
+
+    public static int Score { get; private set; }
 
     public static void Add(int points)
     {
         if(_highScore == 0) _highScore = PlayerPrefs.GetInt("HighScore");
 
-        _score += points;
-        OnScoreChange?.Invoke(_score);
+        Score += points;
+        OnScoreChange?.Invoke(Score);
 
-        if(_score > _highScore)
+        if(Score > _highScore)
         {
-            _highScore = _score;
+            _highScore = Score;
             PlayerPrefs.SetInt("HighScore", _highScore);
         }
         Debug.Log($"High Score = {_highScore}");
