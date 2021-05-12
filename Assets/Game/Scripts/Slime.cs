@@ -64,6 +64,9 @@ public class Slime : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().simulated = false;
 
+        var audioSource = GetComponent<AudioSource>();
+        if (audioSource != null) audioSource.Play();
+
         float alpha = 1;
         while (alpha > 0)
         {
