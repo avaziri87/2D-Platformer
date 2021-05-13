@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class Slime : MonoBehaviour
+public class Slime : MonoBehaviour, ITakeDamage
 {
     [SerializeField] Transform _leftGroundCheck = null;
     [SerializeField] Transform _rightGroundCheck = null;
@@ -29,6 +29,11 @@ public class Slime : MonoBehaviour
             ScanSensor(_rightGroundCheck);
     }
 
+    public void TakeDamage()
+    {
+        StartCoroutine(Die());
+    }
+
     private void ScanSensor(Transform sensor)
     {
         var downtHit = Physics2D.Raycast(sensor.position, Vector2.down, 0.1f);
@@ -48,13 +53,9 @@ public class Slime : MonoBehaviour
         Vector2 normal = contactPoint2D.normal;
 
         if(normal.y <= -0.5f)
-        {
-            StartCoroutine(Die());
-        }
+            TakeDamage();
         else
-        {
             player.ResetToStart();
-        }
     }
 
     IEnumerator Die()

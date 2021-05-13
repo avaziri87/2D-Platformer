@@ -20,6 +20,15 @@ public class Fireball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        ITakeDamage takeDamage = collision.collider.GetComponent<ITakeDamage>();
+
+        if(takeDamage != null)
+        {
+            takeDamage.TakeDamage();
+            Destroy(gameObject);
+            return;
+        }
+
         _bouncesRemaining--;
         if (_bouncesRemaining < 0)
             Destroy(gameObject);

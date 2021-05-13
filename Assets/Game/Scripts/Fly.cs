@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fly : MonoBehaviour
+public class Fly : MonoBehaviour, ITakeDamage
 {
     [SerializeField] Vector2 _direction = Vector2.up;
     [SerializeField] float _maxDistance = 2;
@@ -26,5 +26,10 @@ public class Fly : MonoBehaviour
             transform.position = _startPos + (_direction.normalized * _maxDistance);
             _direction *= -1;
         }
+    }
+
+    public void TakeDamage()
+    {
+        Destroy(gameObject);
     }
 }

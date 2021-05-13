@@ -120,6 +120,7 @@
     <Compile Include="Assets\Game\Scripts\Music.cs" />
     <Compile Include="Assets\Game\Scripts\Fireball.cs" />
     <Compile Include="Assets\Game\Scripts\LaunchFireballs.cs" />
+    <Compile Include="Assets\Game\Scripts\ITakeDamage.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
