@@ -5,8 +5,25 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     [SerializeField] float _launchForce = 5;
+    [SerializeField] float _bounceForce = 5;
+    [SerializeField] int _bouncesRemaining = 3;
+
+    Rigidbody2D _rigibody;
+
+    public int Direction { get; set; }
+
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = Vector2.right * _launchForce;
+        _rigibody = GetComponent<Rigidbody2D>();
+        _rigibody.velocity = Vector2.right * _launchForce * Direction;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        _bouncesRemaining--;
+        if (_bouncesRemaining < 0)
+            Destroy(gameObject);
+        else
+            _rigibody.velocity = new Vector2(_launchForce * Direction, _bounceForce);
     }
 }
