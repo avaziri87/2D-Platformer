@@ -7,12 +7,19 @@ public class Player : MonoBehaviour
     [Header("Movement Parameters")]
     [SerializeField] float _speed = 1;
     [SerializeField] float _slipFactor = 1;
+    [SerializeField] float _acceleration = 1;
+    [SerializeField] float _breaking = 1;
+    [SerializeField] float _airAcceleration = 1;
+    [SerializeField] float _airBreaking = 1;
     [Header("Jump Parameters")]
     [SerializeField] float _jumpVelocity = 10;
     [SerializeField] float _downPull = 5;
     [SerializeField] float _maxJumpDuration = 0.1f;
     [SerializeField] int _maxJumps = 2;
     [SerializeField] Transform _feet;
+    [SerializeField] Transform _leftSensor;
+    [SerializeField] Transform _rightSensor;
+    [SerializeField] float _wallSlideSpeed = 1;
 
     Rigidbody2D _rigidbody2D;
     Animator    _animator;
@@ -57,8 +64,18 @@ public class Player : MonoBehaviour
         UpdateAnimator();
         UpdateSprite();
 
-        if (CanJump()) Jump();
-        else if (CanDoubleJump()) DoubleJump();
+        if (ShouldSlide())
+        {
+            if (CanWallJump())
+                WallJump();
+            else
+                Slide();
+            return;
+        }
+        if (CanJump()) 
+            Jump();
+        else if (CanDoubleJump()) 
+            DoubleJump();
 
         _jumpTimer += Time.deltaTime;
 
@@ -81,7 +98,11 @@ public class Player : MonoBehaviour
     }
     void MoveHorizontal()
     {
-        _rigidbody2D.velocity = new Vector2(_horizontal * _speed, _rigidbody2D.velocity.y);
+        float smoothnessMultiplier = _horizontal == 0 ? _breaking : _acceleration;
+        if(!_isGrounded) smoothnessMultiplier = _horizontal == 0 ? _airBreaking : _airAcceleration;
+
+        float newHorizontal = Mathf.Lerp(_rigidbody2D.velocity.x, _horizontal * _speed, Time.deltaTime * smoothnessMultiplier);
+        _rigidbody2D.velocity = new Vector2(newHorizontal, _rigidbody2D.velocity.y);
     }
     void MoveSlipperyHorizontal()
     {
@@ -104,6 +125,7 @@ public class Player : MonoBehaviour
         bool isWalking = _horizontal != 0;
         _animator.SetBool("Walking", isWalking);
         _animator.SetBool("Jump", CanDoubleJump());
+        _animator.SetBool("Slide", ShouldSlide());
     }
     void CheckIsGrounded()
     {
@@ -136,10 +158,41 @@ public class Player : MonoBehaviour
         _fallTimer = 0;
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpVelocity);
     }
+    bool ShouldSlide()
+    {
+        if (_isGrounded) return false;
+
+        if (_rigidbody2D.velocity.y > 0) return false;
+
+        if(_horizontal < 0)
+        {
+            var hit = Physics2D.OverlapCircle(_leftSensor.position, 0.1f);
+            if(hit != null && hit.CompareTag("Wall")) return true;
+        }
+        if (_horizontal > 0)
+        {
+            var hit = Physics2D.OverlapCircle(_rightSensor.position, 0.1f);
+            if (hit != null && hit.CompareTag("Wall")) return true;
+        }
+            return false;
+    }
+    void Slide()
+    {
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, - _wallSlideSpeed);
+    }
+    private bool CanWallJump()
+    {
+        return Input.GetButtonDown(_jumpButton);
+    }
+    private void WallJump()
+    {
+        Debug.Log("wall jump");
+        _rigidbody2D.velocity = new Vector2(-_horizontal * _jumpVelocity, _jumpVelocity * 1.5f);
+    }
     internal void ResetToStart()
     {
         _rigidbody2D.position = _startPos;
-        SceneManager.LoadScene("Menu Scene");
+        //SceneManager.LoadScene("Menu Scene");
     }    
     internal void TeleportTo(Vector3 position)
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class HittableFromBelow : MonoBehaviour
+public abstract class HittableFromBelow : MonoBehaviour
 {
     [SerializeField] protected Sprite _emptyBoxSprite;
 
@@ -36,10 +36,7 @@ public class HittableFromBelow : MonoBehaviour
         if (_audioSource != null) _audioSource.Play();
     }
 
-    protected virtual void Use()
-    {
-        GetComponent<AudioSource>().Play();
-    }
+    protected abstract void Use();
 
     private void PlayAnimation()
     {
