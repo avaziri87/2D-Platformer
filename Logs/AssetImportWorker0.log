@@ -3834,3 +3834,152 @@ Received Import Request.
 Start importing Assets/Game/Prefabs/Platforms/Cloud.prefab using Guid(52b3d81c48059b34fbdd15fc89209b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea3844f99133d0b66b3db811a94b4be') in 0.125503 seconds
   Import took 0.131990 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 392.063063 seconds.
+  path: Assets/Game/Materials/Light Sprite (STANDARD).mat
+  artifactKey: Guid(dfc2da64caac32542ade1642fae59efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Materials/Light Sprite (STANDARD).mat using Guid(dfc2da64caac32542ade1642fae59efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa995ea6477fc914bcc6f4d47b23518') in 0.087929 seconds
+  Import took 0.092800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 306.374019 seconds.
+  path: Assets/Game/Scenes/SandBox.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Scenes/SandBox.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280c83e37d1d39b596cf7593eaec38f3') in 0.020758 seconds
+  Import took 0.027411 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.817040 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 69.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.077 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3128 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.0 MB.
+System memory in use after: 135.6 MB.
+
+Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 4085.
+Total: 6.137300 ms (FindLiveObjects: 0.685500 ms CreateObjectMapping: 0.324700 ms MarkObjects: 3.259800 ms  DeleteObjects: 1.865100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 217.863635 seconds.
+  path: Assets/Game/Main Audio Mixer.mixer
+  artifactKey: Guid(c5d7cc1ac8fcccc46aee203bd29c09dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Main Audio Mixer.mixer using Guid(c5d7cc1ac8fcccc46aee203bd29c09dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d938170fc78dc010c7c007f3b9cb15') in 0.035500 seconds
+  Import took 0.043344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.744298 seconds.
+  path: Assets/Game/Rendering
+  artifactKey: Guid(e4dd7b4fe9318e74c9dea8b53dad949b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering using Guid(e4dd7b4fe9318e74c9dea8b53dad949b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590de33218514aaef2222fee5cd53860') in 0.016976 seconds
+  Import took 0.023736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.294943 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset.asset using Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e17e57fd43a8c3d89855d3b41a2fcf') in 0.095066 seconds
+  Import took 0.103763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249943c4dd4188e75dc87d50ff25e754') in 0.072294 seconds
+  Import took 0.081655 seconds .
+
+========================================================================
+Received Prepare
+Switching render pipeline 00000000000000000000000000000000 -> 5b9c775ffd504db419cfa263cfd35cf0
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 10.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 132 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 4153.
+Total: 7.994200 ms (FindLiveObjects: 0.994100 ms CreateObjectMapping: 0.146700 ms MarkObjects: 4.563300 ms  DeleteObjects: 2.287300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.069595 seconds.
+  path: Assets/Game/Rendering/New 2D Renderer Data.asset
+  artifactKey: Guid(217061d83c9f107429cbcceb25ab2d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/New 2D Renderer Data.asset using Guid(217061d83c9f107429cbcceb25ab2d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc038ad2417f4708e7c6d9dd4fb4a7f') in 0.033985 seconds
+  Import took 0.042572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.556049 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset.asset using Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd983d6c109421bf5567cb49969a4d68b') in 0.010458 seconds
+  Import took 0.017451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002896 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset.asset using Guid(5b9c775ffd504db419cfa263cfd35cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd983d6c109421bf5567cb49969a4d68b') in 0.012589 seconds
+  Import took 0.019819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.218415 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56e26e29928e5ee7ee69755aee29d7e') in 0.018161 seconds
+  Import took 0.026056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001611 seconds.
+  path: Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Rendering/UniversalRenderPipelineAsset_Renderer.asset using Guid(3bf3a0e367bde894a9bfa56fc3334ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56e26e29928e5ee7ee69755aee29d7e') in 0.014241 seconds
+  Import took 0.022512 seconds .
+
+========================================================================
+Received Prepare
+Switching render pipeline 00000000000000000000000000000000 -> 5b9c775ffd504db419cfa263cfd35cf0
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 11.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.1 MB.
+System memory in use after: 78.2 MB.
+
+Unloading 63 unused Assets to reduce memory usage. Loaded Objects now: 4156.
+Total: 6.719800 ms (FindLiveObjects: 0.624600 ms CreateObjectMapping: 0.350200 ms MarkObjects: 3.816500 ms  DeleteObjects: 1.927200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:srp/default-shader: 0000e00a000e0de00000e000e02d0000 -> 0000e00a000e0de00000e000e0000000
